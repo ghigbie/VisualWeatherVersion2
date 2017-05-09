@@ -4,7 +4,7 @@ const express = require("express"),
 const port = process.env.PORT,
         ip = process.env.IP;
         
-app.use("view engine", "ejs");
+app.set("view engine", "ejs");
 
 app.get("*", (req, res) => {
    res.send("Not found page"); 
