@@ -10,8 +10,12 @@ app.set("/", (req, res) => {
    res.render("landing") 
 });
 
+app.set("/home", (req, res) => {
+   res.render("home"); 
+});
+
 app.get("*", (req, res) => {
-   res.send("notfound"); 
+   res.render("notfound"); 
 });
 
 app.listen(port, ip, () => {
