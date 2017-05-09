@@ -6,6 +6,11 @@ const port = process.env.PORT,
         
 app.use("view engine", "ejs");
 
+app.get("*", (req, res) => {
+   res.send("Not found page"); 
+});
+
 app.listen(port, ip, () => {
    console.log(`Server is up on port ${port}`);
 });
+
