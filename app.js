@@ -6,16 +6,16 @@ const port = process.env.PORT,
         
 app.set("view engine", "ejs");
 
-app.set("/", (req, res) => {
+app.get("/", (req, res) => {
    res.render("landing") 
 });
 
-app.set("/home", (req, res) => {
+app.get("/home", (req, res) => {
    res.render("home"); 
 });
 
 app.get("*", (req, res) => {
-   res.render("notfound"); 
+  res.render("notfound"); 
 });
 
 app.listen(port, ip, () => {
