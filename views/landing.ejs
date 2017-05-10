@@ -1,22 +1,29 @@
 <% include partials/header %>
 
-<h1>Thanks for landing on the landing page!</h1>
+<h1 class="spaced">Please enter your address below to get the weather:</h1>
 
 <form>
-    <div class="form-group">
+    <div class="form-group spaced">
         <lable for="address">Street Address</lable>
         <input class="form-control" type="text" name="address" id="address" placeholder="Address">
     </div>
     
-    <div class="form-group">
-        <lable for="city"></lable>
-        <input class="form-control" type="text" name="city" id="city" placehoder="City">
+    <div class="form-group spaced">
+        <lable for="city">City</lable>
+        <input class="form-control" type="text" name="city" id="city" placeholder="City">
     </div>
     
-    <div class="form-group">
-        <lable for="state"></lable>
-        <input class="form-control" type="text" name="state" id="state" placehoder"State">
+    <div class="form-group spaced">
+        <lable for="state">State</lable>
+        <input class="form-control" type="text" name="state" id="state" placeholder="State">
     </div>
+    
+    <div class="form-group spaced">
+        <lable for="zip">Zip Code</lable>
+        <input class="form-control" type="text" name="zip" id="zip" placeholder="Zip Code">
+    </div>
+    
+    <button class="btn-primary active half spaced">Submit</button>
 </form>
 
 
